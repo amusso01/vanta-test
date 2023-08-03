@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="three.r134.min.js"></script>
+  <script src="vanta.halo.min.js"></script>
+  <title>Vanta 3d</title>
+</head>
+
+<body>
+  <style>
+    #page{
+      width: 100vw;
+      height:100vh;
+    }
+  </style>
+  <div id="page"></div>
+</body>
+
+<script>
+VANTA.HALO({
+  el: "#page",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00
+})
+</script>
+</html>
