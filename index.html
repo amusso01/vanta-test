@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="three.r134.min.js"></script>
-  <script src="vanta.halo.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
   <title>Vanta 3d</title>
 </head>
 
@@ -16,16 +16,17 @@
     }
   </style>
   <div id="page"></div>
+  
+  <script>
+  VANTA.HALO({
+    el: "#page",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00
+  })
+  </script>
 </body>
 
-<script>
-VANTA.HALO({
-  el: "#page",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00
-})
-</script>
 </html>
